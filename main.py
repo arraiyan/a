@@ -12,7 +12,7 @@ import random
 import time
 
 
-#value goes for 6
+#value goes for 6 8
 bot = Bot(env.API_KEY)
 
 print(bot.get_me())
@@ -105,7 +105,7 @@ def d_intv(update:Update,context:CallbackContext):
     else:
         bot.send_message(chat_id=update.effective_chat.id,reply_to_message_id=update.message.message_id,text="sorry only admins can use this commands")
 
-start_value7=CommandHandler('d_cap',d_captcha)
+start_value7=CommandHandler('d_intv',d_intv)
 dispatcher.add_handler(start_value7)
 
 def e_intv(update:Update,context:CallbackContext):
@@ -115,7 +115,7 @@ def e_intv(update:Update,context:CallbackContext):
     else:
         bot.send_message(chat_id=update.effective_chat.id,reply_to_message_id=update.message.message_id,text="sorry only admins can use this commands")
 
-start_value8=CommandHandler('e_cap',e_captcha)
+start_value8=CommandHandler('e_intv',e_intv)
 dispatcher.add_handler(start_value8)
 
 ########################
